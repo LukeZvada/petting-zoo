@@ -1,0 +1,1 @@
+from slithering.models import Slug, Snake, Salamander, Snail, Worm
