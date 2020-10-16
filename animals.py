@@ -23,6 +23,6 @@ Blake = Snake("Blake", "Python", "Night", "Mice")
 Ted = Worm("Ted", "Earthworm", "Midday", "Dirt")
 Gary = Snail("Gary", "Garden Snail", "Morning", "Dirt")
 
-print(f'{Cougs.name} the {Cougs.species} is available to pet during the {Cougs.shift} shift.')
-print(Cougs.feed())
+print(f'{Cougs.name} the {Cougs.species} is available to pet during the {Cougs.shift} shift.') 
+Cougs.feed()
 print(Cougs)
