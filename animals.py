@@ -1,4 +1,5 @@
 from datetime import date
+from habitats.pettingzoo import PettingZoo
 from slithering.models import Salamander, Slug, Snail, Snake, Worm
 from swimming.models import Bass, Orca, Salmon, Seal, Tuna
 from walking.models import Bear, Bigfoot, Cougar, Deer, Lion
@@ -26,3 +27,15 @@ Gary = Snail("Gary", "Garden Snail", "Morning", "Dirt")
 print(f'{Cougs.name} the {Cougs.species} is available to pet during the {Cougs.shift} shift.') 
 Cougs.feed()
 print(Cougs)
+Bigboy.feed()
+Mal.feed()
+
+varmint_village = PettingZoo("Varmint Village")
+
+varmint_village.animals.append(Cougs)
+varmint_village.animals.append(Bambi)
+varmint_village.animals.append(Bee)
+varmint_village.animals.append(Bigboy)
+varmint_village.animals.append(Simba)
+
+print(varmint_village.animals)
