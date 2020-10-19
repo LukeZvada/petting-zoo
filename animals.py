@@ -1,4 +1,7 @@
 from datetime import date
+from habitats.wetlands import Wetlands
+from habitats import wetlands
+from habitats.snakepit import SnakePit
 from habitats.pettingzoo import PettingZoo
 from slithering.models import Salamander, Slug, Snail, Snake, Worm
 from swimming.models import Bass, Orca, Salmon, Seal, Tuna
@@ -39,3 +42,32 @@ varmint_village.animals.append(Bigboy)
 varmint_village.animals.append(Simba)
 
 print(varmint_village.animals)
+
+for animal in varmint_village.animals:
+    print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
+
+snake_pit = SnakePit("Snake Pit")
+
+snake_pit.animals.append(Mal)
+snake_pit.animals.append(Doug)
+snake_pit.animals.append(Blake)
+snake_pit.animals.append(Ted)
+snake_pit.animals.append(Gary)
+
+print(snake_pit.animals)
+
+for animal in snake_pit.animals:
+    print(f'You can find {animal.name} the {animal.species} in the {snake_pit.attraction_name}')
+
+wetlands = Wetlands("Wetlands")
+
+wetlands.animals.append(Jim)
+wetlands.animals.append(Luna)
+wetlands.animals.append(Sally)
+wetlands.animals.append(Willy)
+wetlands.animals.append(Neal)
+
+print(snake_pit.animals)
+
+for animal in wetlands.animals:
+    print(f'You can find {animal.name} the {animal.species} in the {wetlands.attraction_name}')
